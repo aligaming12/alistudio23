@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-rgb: 247, 247, 247;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-rgb));
+  overflow-x: hidden;
+}
+
+@layer components {
+  .container-wrapper {
+    @apply px-4 sm:px-6 lg:px-8 mx-auto max-w-7xl;
+  }
+  
+  .section {
+    @apply py-16 sm:py-24;
+  }
+  
+  .heading-xl {
+    @apply text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight;
+  }
+  
+  .heading-lg {
+    @apply text-3xl sm:text-4xl font-bold;
+  }
+  
+  .heading-md {
+    @apply text-2xl sm:text-3xl font-bold;
+  }
+  
+  .btn-primary {
+    @apply bg-primary hover:bg-primary/90 text-white font-medium py-3 px-6 rounded-lg transition-all;
+  }
+  
+  .btn-secondary {
+    @apply bg-secondary hover:bg-secondary/90 text-white font-medium py-3 px-6 rounded-lg transition-all;
+  }
+  
+  .btn-outline {
+    @apply border border-secondary hover:bg-secondary/10 text-secondary font-medium py-3 px-6 rounded-lg transition-all;
+  }
+} 
